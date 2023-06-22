@@ -1,5 +1,6 @@
 :root {
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
 }
 
 body {
@@ -8,8 +9,9 @@ body {
     align-items: center;
 }
 
-.header ul {
-    list-style-type: none;
+button {
+    font-family: inherit;
+    font-size: inherit;
 }
 
 .justify-between {
@@ -75,4 +77,54 @@ body {
 
 .grid-section-1 {
     grid-template-columns: 1fr 1fr;
+}
+
+.link {
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+    /* font-family: 'Roboto' sans-serif; */
+}
+
+.link:focus,
+.link:hover {
+    background-color: lightgray;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 0.25rem);
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-10px);
+    scale: 1 0;
+    transform-origin: top;
+    transition-property: scale, opacity;
+    transition-duration: .25s;
+    transition-timing-function: ease-in-out;
+    width: max-content;
+    max-width: 300px;
+    min-width: 100%;
+}
+
+.dropdown:focus-within .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    scale: 1 1;
+}
+
+.dropdown-content a.menu-item {
+    display: block;
+}
+
+.dropdown-content .menu-item:hover {
+    color: black;
+    background-color: lightgrey;
 }
