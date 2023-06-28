@@ -10,12 +10,20 @@
 </head>
 
 <body>
-    <div class="content-width margin-auto">
+
+    <div class="video-container">
+        <video autoplay muted loop poster>
+            <source src="https://cdn.discordapp.com/attachments/1080161624196919409/1122857908170920036/intro.mp4"  type="video/mp4">
+        </video>
+    </div>
+
+
+    <div class="content-width margin-auto position-r">
 
 
         <header class="header">
-            <nav class="flex gap-1 justify-between">
-                <div class="flex align-items gap-1">
+            <nav class="flex gap-1 flex-wrap justify-between">
+                <div class="flex align-items flex-wrap gap-1">
                     <div>
                         <img width="100" src="images/logo-compact.png" alt="Logo">
                     </div>
@@ -66,69 +74,189 @@
 
                 </div>
                 <ul class="flex gap-1">
-                    <li class="flex align-items">Logo info</li>
+                    <li class="flex align-items">Login info</li>
                 </ul>
             </nav>
         </header>
         <hr>
 
         <main class="flex flex-col gap-1">
-            <section class="hero">
-                <img width="800" src="images/logo-full-centered@2x.png" alt="Logo">
+            <section class="hero flex align-items">
+                <img width="60%" src="images/logo-full-centered@2x.png" alt="Logo">
             </section>
 
             <div class="main-grid grid gap-1">
                 <!-- 1 -->
-                <div class="grid grid-section-1 gap-1">
-                    <div class="border flex align-items">
-                        <p>Beginner's Guid</p>
+                <section class="grid conteiner-1 gap-1 ">
+                    <div class="border grid-span-2 logo-link">
+                        <h3>Beginner's Guide</h3>
                     </div>
-                    <div class="border flex align-items">
-                        <p>Clans</p>
+                    <div class="border grid-span-2 logo-link">
+                        <h3>Clans</h3>
                     </div>
-                    <div class="border flex align-items">
-                        <p>History</p>
+                    <div class="border grid-span-2 logo-link">
+                        <h3>History</h3>
                     </div>
-                    <div class="border flex align-items">
-                        <p>Clients/client updates</p>
+                    <div class="grid-span-1 border logo-link">
+                        <h3>Organisation</h3>
                     </div>
-                </div>
+                    <div class="grid-span-1 border logo-link">
+                        <h3>Game History</h3>
+                    </div>
+
+                </section>
                 <!-- 2 -->
-                <div class="border">
-                    <div class="flex align-items">
-                        <h4>Current Top clans/players</h4>
+                <section class="flex gap-1 flex-col">
+                    <div class="flex">
+                        <h2 class="h2">Leaderboards</h2>
                     </div>
-                    <div class="flex gap-1">
-                        <div class="margin-1 flex-1">
-                            <p>Clan 999</p>
-                            <p>Clan 999</p>
-                            <p>Clan 999</p>
-                            <p>Clan 999</p>
-                            <p>Clan 999</p>
-                            <p>Clan 999</p>
-                            <p>Clan 999</p>
-                            <p>Clan 999</p>
-                            <p>Clan 999</p>
-                            <p>Clan 999</p>
+                    <div class="section-bg section-border leaderboard">
+                        <div class="flex flex-col flex-1 section-border-right">
+                            <div class="flex flex-col align-items gap-1 p-2">
+                                <h3>Top Clans</h3>
+                            </div>
+
+                            <div class="auto-numbers odd-light-color">
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p class="truncate">UA</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>UA</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>UA</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>UA</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>UA</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>UA</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>UA</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>UA</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>UA</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>UA</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                            </div>
+
+
                         </div>
-                        <div class="margin-1 flex-1">
-                            <p>Player 999</p>
-                            <p>Player 999</p>
-                            <p>Player 999</p>
-                            <p>Player 999</p>
-                            <p>Player 999</p>
-                            <p>Player 999</p>
-                            <p>Player 999</p>
-                            <p>Player 999</p>
-                            <p>Player 999</p>
-                            <p>Player 999</p>
+                        <div class="flex flex-col flex-1">
+                            <div class="flex flex-col align-items gap-1 p-2">
+                                <h3>Top Players</h3>
+                            </div>
+
+                            <div class="auto-numbers odd-light-color">
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p class="truncate">Player XYZ very long name</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>Player XYZ</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>Player XYZ</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>Player XYZ</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>Player XYZ</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>Player XYZ</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>Player XYZ</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>Player XYZ</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>Player XYZ</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                                <div class="flex justify-between p-2">
+                                    <div class="flex auto-number-item">
+                                        <p>Player XYZ</p>
+                                    </div>
+                                    <p>X.XX</p>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
-                </div>
+                </section>
                 <!-- 3 -->
-                <div class="border padding-1">
+                <section class="padding-1 section-bg section-border flex flex-col gap-1">
                     <div>
-                        <h3>Jornal Section</h3>
+                        <h2>Jornal Section</h2>
                     </div>
                     <div class="flex gap-1">
                         <div>
@@ -140,7 +268,7 @@
                             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
                     </div>
-                    <hr>
+                    <div class="hr"></div>
                     <div class="flex gap-1">
                         <div>
                             <img width="100" src="images/logo-compact-centered-regular.png" alt="Logo">
@@ -151,7 +279,7 @@
                             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
                     </div>
-                    <hr>
+                    <div class="hr"></div>
                     <div class="flex gap-1">
                         <div>
                             <img width="100" src="images/logo-compact-centered-regular.png" alt="Logo">
@@ -163,16 +291,23 @@
                         </div>
                     </div>
 
-                </div>
+                </section>
                 <!-- 4 -->
-                <div class="flex flex-col gap-1">
-                    <div class="flex flex-1 border ">
-                        <p class="margin-1">Container for video link (currently active steam or replay)</p>
+                <section class="flex flex-col gap-1">
+                    <div class="flex flex-1 flex-col">
+                        <div class="flex">
+                            <h2 class="h2">content creators</h2>
+                        </div>
+                        <div class="flex-1 section-bg section-border leaderboard"></div>
                     </div>
-                    <div class="flex flex-2 border ">
-                        <p class="margin-1">Upcoming community events?</p>
+                    <div class="flex flex-2 flex-col">
+
+                        <div class="flex">
+                            <h2 class="h2">community events</h2>
+                        </div>
+                        <div class="flex-1 section-bg section-border leaderboard"></div>
                     </div>
-                </div>
+                </section>
             </div>
         </main>
         <hr>
