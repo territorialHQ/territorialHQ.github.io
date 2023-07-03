@@ -132,6 +132,10 @@ hr,
     justify-content: center;
 }
 
+.min-height {
+    min-height: 100px;
+}
+
 .gap-1 {
     gap: 1rem;
 }
