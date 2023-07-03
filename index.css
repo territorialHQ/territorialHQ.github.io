@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "LoRes 15 OT";
+    src: url(fonts/LoRes15OT-Bold.woff2);
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url(fonts/RobotoCondensed-Light-webfont.woff);
+}
+
 :root {
     font-family: system-ui;
     font-size: 1rem;
@@ -11,6 +21,7 @@
 
 a {
     text-decoration: none;
+    font-family: "Roboto Condensed";
 }
 
 a:visited {
@@ -25,9 +36,10 @@ body {
 }
 
 button {
-    font-family: inherit;
+    font-family: "LoRes 15 OT";
     font-size: inherit;
     color: inherit;
+    text-transform: uppercase;
 }
 
 .section-border {
@@ -46,6 +58,11 @@ h2,
 h3 {
     margin: 0;
     text-transform: uppercase;
+    font-family: 'LoRes 15 OT';
+}
+
+p {
+    font-family: "Roboto Condensed";
 }
 
 h2 {
@@ -133,10 +150,6 @@ hr,
 
 .min-w-4 {
     min-width: 1rem;
-}
-
-.border {
-    border: rgb(34, 60, 83) solid 2px;
 }
 
 .grid {
@@ -264,6 +277,7 @@ hr,
 
 .logo-link:hover h3 {
     color: var(--accent-color);
+    text-shadow: -1px -1px 0px var(--bg), 1px 1px 0px var(--bg), 1px -1px 0px var(--bg), -1px 1px 2px var(--bg);
 }
 
 .logo-link:hover::before,
@@ -336,30 +350,4 @@ video {
 
 .position-r {
     position: relative;
-}
-
-.backgrond {
-    background-color: rgb(21, 36, 63);
-}
-
-.background-light {
-    background-color: rgb(30, 30, 44);
-}
-
-.background-dark {
-    background-color: rgb(15, 15, 44);
-}
-
-.background-blu {
-    background-color: blue;
-}
-
-.back-ground-gadient {
-    width: 1000px;
-    height: 1000px;
-    position: fixed;
-    left: 0;
-    z-index: 0;
-    /* background-color: rgb(12 1 29); */
-    background: linear-gradient(to top, rgba(16, 1, 37, 0.7) 50%, rgba(9, 1, 22, 0) 100%)
 }
