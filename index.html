@@ -23,71 +23,58 @@
         </video>
     </div>
 
-
-    <div class="content-width margin-auto position-r">
-
+    <div class="content-width margin-auto">
 
         <header class="header">
-            <nav class="flex gap-1 flex-wrap justify-between">
-                <div class="flex align-items flex-wrap gap-1">
-                    <div>
-                        <img width="100" src="images/logo-compact.png" alt="Logo">
-                    </div>
 
-                    <div class="dropdown">
-                        <button class="link padding-1 border">Menu Item</button>
-                        <div class="dropdown-content">
-                            <a class="padding-1 menu-item" href="#">
-                                Submenu Item 
-                            </a>
-                            <a class="padding-1 menu-item" href="#">
-                                Submenu Item 
-                            </a>
-                            <a class="padding-1 menu-item" href="#">
-                                Submenu Item 
-                            </a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="link padding-1 border">Menu Item</button>
-                        <div class="dropdown-content">
-                            <a class="padding-1 menu-item" href="#">
-                                Submenu Item 
-                            </a>
-                            <a class="padding-1 menu-item" href="#">
-                                Submenu Item 
-                            </a>
-                            <a class="padding-1 menu-item" href="#">
-                                Submenu Item 
-                            </a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="link padding-1 border">Menu Item</button>
-                        <div class="dropdown-content">
-                            <a class="padding-1 menu-item" href="#">
-                                Submenu Item 
-                            </a>
-                            <a class="padding-1 menu-item" href="#">
-                                Submenu Item 
-                            </a>
-                            <a class="padding-1 menu-item" href="#">
-                                Submenu Item 
-                            </a>
-                        </div>
-                    </div>
-
-
+            <nav class="navbar">
+                <div class="flex justify-center">
+                    <img width="100" src="images/logo-compact.png" alt="Logo">
                 </div>
-                <div class="flex gap-1">
-                    <p class="flex align-items">Login info</p>
-                </div>
+                <ul class="nav-links flex-1">
+                    <input type="checkbox" class="hidden-checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="menu justify-between">
+
+                        <div class="nav-group">
+
+                            <li class="submenu" tabindex="0">
+                                <a href="#">Menu Item</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Submenu</a></li>
+                                    <li><a href="#">Submenu</a></li>
+                                    <li><a href="#">Submenu</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu" tabindex="0">
+                                <a href="#">Menu Item</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Submenu</a></li>
+                                    <li><a href="#">Submenu</a></li>
+                                    <li><a href="#">Submenu</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu" tabindex="0">
+                                <a href="#">Menu Item</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Submenu</a></li>
+                                    <li><a href="#">Submenu</a></li>
+                                    <li><a href="#">Submenu</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="nav-group ">
+                            <li class="submenu"><a href="#">Login info</a></li>
+                        </div>
+                    </div>
+                </ul>
             </nav>
+
         </header>
         <hr>
 
         <main class="flex flex-col gap-1">
-            <section class="hero flex align-items">
+            <section class="hero flex align-items justify-center">
                 <img width="60%" src="images/logo-full-centered@2x.png" alt="Logo">
             </section>
 
